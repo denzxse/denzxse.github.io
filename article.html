@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>PAT TIK - Dennise 8104</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="logo.png" width="100" height="100"></a>
+                <div class="nav-links id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu ()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="recommendation.html">RECOMMENDATION</a></li>
+                        <li><a href="booknotes.html">BOOK NOTES</a></li>
+                        <li><a href="article.html">ARTICLE</a></li>
+                    </ul>
+                </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Articles 📝</h1>
+        </section>
+
+<!-------- article page content -------->
+
+        <section class="article-content">
+
+            <div class="row">
+                <div class="article-left">
+                    <img src="articlepageimage.png">
+                    <h2>DENNISE'S 5 BENEFITS OF READING BOOKS: WHY YOU SHOULD READ EVERY DAY</h2>
+                    <p>There are so many benefits to reading books. But let's face it: It can be challenging to motivate ourselves to 
+                        read a 382-page book when we can watch the movie, listen to the audiobook, or watch a YouTube video summary 
+                        instead. However, if most of your daily reading consists of social media posts and texts, you're missing out.
+                        <p><b>So, what are the benefits of reading books? </p>
+                        <p>If you're interested in reading more books but need some motivation, this article's for you. After all, 
+                            when you understand the importance of reading books, you're more likely to do it. Here are 10 benefits of 
+                            reading that illustrate the importance of reading books:</p>
+                        <p><b>(1) Gain Valuable Knowledge</b>, one of the most obvious benefits of reading every day is learning. Unlike a
+                             YouTube video or a podcast, books provide access to in-depth knowledge. In other words, if you want to 
+                             become more productive, absorb more information, and change your habits, you are in need of books! Just
+                             like the author Roald Dahl once said, "If you are going to get anywhere in life, you have to read a lot 
+                             of books."</p>
+                        <p><b>(2) Exercise Your Brain</b>, as the 17th century English writer <i>Joseph Addison</i> once wrote, "Reading
+                             is to the mind, what exercise is to the body." Which means, reading gives your mind exercise just as you
+                             exercise for your body. Research has confirmed that reading stimulates a complex network of circuits and 
+                             signals in the brain. Plus, as you improve your reading ability, these networks become stronger and more 
+                             sophisticated. In another study, researchers measured how reading a novel affects our brains. The study's
+                              participants read the novel "Pompeii" by Robert Harris, and as tension in the story developed, more areas
+                               of the brain were activated. And the best part is, the scans showed that brain connectivity increased 
+                               while reading every day. Bottom line, our brains, just like our muscles, if we don't exercise them
+                                regularly, our cognitive abilities may decline. However, when we read every day, we can keep them strong and healthy.</p>
+                        <p><b>(3) Improve Focus</b>, one of the key benefits of reading is that it helps you practice concentrating on
+                             just one thing at a time. For example, a novel requires all of your attention for it to pull you in to
+                              its world. And if you want to learn from a non-fiction book, it requires you to be fully present and 
+                              engaged. In short, if you want to succeed, you need to focus. And if you want to focus more, you can 
+                              practice by reading books.</p>
+                        <p><b>(4) Improve Memory</b>, one of the advantages of reading books is that it can improve your memory. When
+                             you read a non-fiction book, you also consume an enormous amount of information on the subject you're 
+                             reading about. Similarly, whenever you read a novel, you have to remember tons of information about the 
+                             story's plot, the characters, their relationships, and the environment in which the story takes place, which
+                             is a lot of information! All of these new information creates new memories. And every new memory strengthens
+                             the old ones. Reading every day can improve your memory, help you learn how to store new information, and
+                              recall memories more effectively.</p>
+                        <p><b>(5) Improve Communication Skills</b>. The ability to communicate effectively is a vital life skill. In 
+                            fact, one study discovered that 69% of employers are looking to hire people with "soft" skills, such as 
+                            effective communication. One of the key benefits of reading is that it helps us to communicate better. How?
+                             Reading every day can improve our communication skills in a few ways. For example, reading can influence 
+                             your writing and increase your vocabulary. When we read well-written work, we naturally observe its 
+                             writing style and composition. These characteristics unconsciously and automatically applies to your 
+                             writing, in the same way that musicians are influenced by each other. What's more, studies show that 
+                             those who read regularly tend to develop large vocabularies. Finally, don't forget that reading also 
+                             help improve our communication skills by increasing our ability to empathize and understand others. Bottom
+                             line, read more, communicate better, and improve!</p>
+
+                             <section id="app">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <div class="comment">
+                                    <p v-for="items in item" v-text="items"></p>
+                                      </div>
+                                      </div>
+                                      </div>
+                                  <div class="row">
+                                    <div class="col-6">
+                                  <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                      <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </section>
+                           
+
+
+                </div>
+                <div class="article-right">
+                    <h3>5 Benefits + 2 Extra Benefits</h3>
+                    <div>
+                        <span>Gain Valuable Knowledge</span>
+                    </div>
+                    <div>
+                        <span>Exercise Your Brain</span>
+                    </div>
+                    <div>
+                        <span>Improve Focus</span>
+                    </div>
+                    <div>
+                        <span>Improve Memory</span>
+                    </div>
+                    <div>
+                        <span>Improve Communication Skills</span>
+                    </div>
+                    <div>
+                        <span>Improve Ability to Empathize</span>
+                    </div>
+                    <div>
+                        <span>Improve Mental Health</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+<!-------- JavaScript untuk Comment -------->
+
+<script>
+    $(document).ready(function(){ 
+ 
+ $(".primaryContained").on('click', function(){
+ $(".comment").addClass("commentClicked");
+});//end click
+$("textarea").on('keyup.enter', function(){
+ $(".comment").addClass("commentClicked");
+});//end keyup
+});//End Function
+new Vue({
+ el: "#app",
+ data:{
+    title: 'Add a comment',
+   newItem: '',
+   item: [],
+ },
+ methods:{
+   addItem  (){
+   this.item.push(this.newItem);
+     this.newItem = "";
+   }
+}
+});
+</script>
+
+<!------- Footer ------->
+
+<section class="footer">
+    <h4>About</h4>
+    <p>Hello, this is Dennise! This HTML/CSS website, with a bit of JavaScript, is built for my <b>Computer Science Final Exam</b>. Made from 17/05/2022(Start) to 18/05/2022(Finish). 
+        <br>This website is in English, because most of my literature reviews are in English. The proccess was fun, even though tiring, but coding is actually pretty 
+        awesome. <br>Thankyou for looking through my website, have a good one!</p>
+        <p>made with ♥️ by <i>Annabelle Dannasha Silitonga / 8104</i></p>
+</section>
+
+<!--------JavaScript untuk Toggle Menu-------->
+    <script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+    </script>
+
+    </body>
+</html>

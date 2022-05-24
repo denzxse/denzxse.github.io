@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>PAT TIK - Dennise 8104</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="logo.png" width="100" height="100"></a>
+                <div class="nav-links id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu ()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="recommendation.html">RECOMMENDATION</a></li>
+                        <li><a href="booknotes.html">BOOK NOTES</a></li>
+                        <li><a href="article.html">ARTICLE</a></li>
+                    </ul>
+                </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Monthly Book Recommendation 📋</h1>
+        </section>
+
+<!-------- recommendation content -------->
+
+<section class="recommendation">
+    <div class="row">
+        <div class="recommendation-col">
+            <h1>Atomic Habits by James Clear 📒</h1>
+            <h3>💬 What Are Habits?</h3>
+            <p>Habits are the compound interest of self-improvement.
+                And when we repeat errors, day after day, through replicating poor decisions, duplicating tiny mistakes, and 
+                rationalising little excuses, our small choices compound into toxic results.</p>
+            <h3>🧑‍⚖️ 4 laws of behaviour change that we can use to create good habits and break bad ones!</h3>
+            <p><b>Make it obvious</b> - the habit needs to be effortless for us and require no active thinking. For example, when I had a 
+                hard time remembering to take my Vitamins. I realised that the problem was that I kept these pills on the inside a 
+                drawer far from my bed. Once I put them in the obvious spot that I couldn't miss, I started taking them more regularly.</p>
+            <p><b>Make it attractive</b> - if the habit is unattractive we likely won't have enough willpower to do it over and over. 
+                Therefore, you should come up with some ways to make the habit attractive even if it's something hard like music practices
+                 or studying for long hours. For me, it was studying with music, snacks, and a comfortable room.</p>
+            <p><b>Make it easy</b> - the less friction there is between yourself and the habit, the greater the chances are that you’ll 
+                actually do it. This applies to simple things like packing your school bag a day before or preparing a healthy meal 
+                to make sure that you don't order fastfood from deliver apps.</p>
+            <p><b>Make it immediately satisfying</b> - our brain rewards immediate returns so it's good to come up with something 
+                simple that brings us joy right after we perform our habit. Every time I study, I turn on some music and prepared snacks,
+                 then studies for a couple hours. I know that it sounds a bit simple but this little routine makes me much more 
+                 optimistic and relaxed about spending two hourse or three studying in my room.</p>
+            <h3>⏳ It takes time to build a habit or break a bad one</h3>
+            <p>Time magnifies the margin between success and failure. It will multiply whatever you feed it. Good habits make time 
+                your ally. Bad habits make time your enemy. If you find yourself struggling to build a good habit or break a bad one, 
+                it is not because you have lost your ability to improve.</p>
+                <a href="https://jamesclear.com/atomic-habits" class="hero-btn blue-btn">CHECK  IT OUT!</a>
+        </div>
+        <div class="recommendation-col">
+             <img src="atomichabitspage.png">
+        </div>
+    </div>
+</section>
+
+<!------- Footer ------->
+
+<section class="footer">
+    <h4>About</h4>
+    <p>Hello, this is Dennise! This HTML/CSS website, with a bit of JavaScript, is built for my <b>Computer Science Final Exam</b>. Made from 17/05/2022(Start) to 18/05/2022(Finish). 
+        <br>This website is in English, because most of my literature reviews are in English. The proccess was fun, even though tiring, but coding is actually pretty 
+        awesome. <br>Thankyou for looking through my website, have a good one!</p>
+        <p>made with ♥️ by <i>Annabelle Dannasha Silitonga / 8104</i></p>
+</section>
+
+<!--------JavaScript untuk Toggle Menu-------->
+    <script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+    </script>
+
+    </body>
+</html>
